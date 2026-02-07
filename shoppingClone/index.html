@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<style>
+    .brand-title{
+        font-size:25px;
+        color:black;
+        font-family: monospace;
+    }
+header{
+     display:flex;
+     justify-content: space-around;
+     align-items: center;
+    }
+nav span{
+        padding-right: 20px;
+        font-family:monospace ;
+        font-size: 16px;
+    }
+nav span:hover{
+    color: red;
+    cursor:pointer
+}
+.shortcuts{
+    padding-right: 10px;
+}
+.shortcuts span:hover{
+    color:red;
+    cursor:pointer;
+}
+article{
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.bi-lightning-fill{
+    color:goldenrod;
+}
+main{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+.women-fashion{
+    background-image: url("images/women.jpg");
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.7;
+}
+.women-fashion:hover{
+    opacity: 1;
+}
+.men-fashion:hover{
+    opacity: 1;
+}
+.kids-fashion:hover{
+    opacity: 1;
+}
+.shop{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.btn-shop{
+background-color: white;
+}
+.men-fashion{
+    background-image: url("images/men.jpg");
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.7;
+}
+.kids-fashion{
+    background-image: url("images/kids.jpg");
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.7;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h2>Shopper</h2>
+        <nav>
+            
+            <span>Home</span>
+            <span>Catalogue</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>
+        <div class="'shortcuts">
+            <span><i class="bi bi-search"></i></span>
+            <span><i class="bi bi-person"></i></span>
+            <span><i class="bi bi-heart"></i></span>
+            <span><i class="bi bi-cart"></i></span>
+
+        </div>
+    </header>
+    <article>
+        <span><i class="bi bi-lightning-fill"></i></span>
+        <span>Happy Holidays Deals On Everything</span>
+        <span><i class="bi bi-lightning-fill"></i></span>
+    </article>
+    <main>
+        <div class="women-fashion">
+            <span class="shop">Women</span>
+            <span class="btn-shop">shop-women</span>
+        </div>
+        <div class="men-fashion">
+            <span class="shop">Men</span>
+            <span class="btn-shop">shop-Men</span>
+        </div>
+        <div class="kids-fashion">
+            <span class="shop">Kids</span>
+            <span class="btn-shop">shop-kids</span>
+        </div>
+    </main>
+    
+</body>
+</html>
